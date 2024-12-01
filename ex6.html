@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .video {
+            flex: 1 1 calc(50% - 40px); /* Adjust to 50% width minus gaps */
+            max-width: 500px;
+        }
+        iframe {
+            width: 100%;
+            height: 280px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .video {
+                flex: 1 1 100%; /* Full width for smaller screens */
+            }
+            iframe {
+                height: 200px;
+            }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    YouTube Video Gallery
+</header>
+
+<div class="container">
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/SSo_EIwHSd4?si=LhOv4eLcWdpm5NM2" 
+            title="YouTube video 2" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+  
+    
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/tp6uF-bPG6E?si=HIgh4xPVCLDdIaMq" 
+            title="YouTube video 2" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="video">
+        <div class="video-thumbnail" style="position: relative; cursor: pointer;">
+            <iframe src="https://www.youtube.com/embed/ZE2HxTmxfrI?si=u2ZiNQA2HTP3UaJ3" alt="Video Thumbnail" style="width: 100%; border-radius: 8px;">
+            
+            <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); color: white; padding: 10px 20px; border-radius: 5px;">Play</span>
+            </iframe>
+        </div>
+        <iframe style="display: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    
+        <div class="video">
+            <div class="video-thumbnail" style="position: relative; cursor: pointer;">
+                <iframe
+                 src="https://www.youtube.com/embed/M3EFi_POhps?si=YDsGkN6zlmz5DZHW" alt="Video Thumbnail" style="width: 100%; border-radius: 8px;">
+                <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); color: white; padding: 10px 20px; border-radius: 5px;">Play</span>
+                </iframe>
+            </div>
+            <iframe style="display: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <div class="video-thumbnail" style="position: relative; cursor: pointer;">
+                <iframe src="https://www.youtube.com/embed/EIYYXcT4gFs?si=CJr_52mqAO6sPvEt" alt="Video Thumbnail" style="width: 100%; border-radius: 8px;">
+                
+                <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); color: white; padding: 10px 20px; border-radius: 5px;">Play</span>
+                </iframe>
+            </div>
+            <iframe style="display: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <div class="video-thumbnail" style="position: relative; cursor: pointer;">
+                <iframe src="https://www.youtube.com/embed/kUbRPR_Icms?si=gSvcmyJOY4x_FMse" alt="Video Thumbnail" style="width: 100%; border-radius: 8px;">
+                
+                <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); color: white; padding: 10px 20px; border-radius: 5px;">Play</span>
+                </iframe>
+            </div>
+            <iframe style="display: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <div class="video-thumbnail" style="position: relative; cursor: pointer;">
+                <iframe src="https://www.youtube.com/embed/-PeJoJKGNP4?si=lhRX_6UciN1CHdo2" alt="Video Thumbnail" style="width: 100%; border-radius: 8px;">
+                
+                <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); color: white; padding: 10px 20px; border-radius: 5px;">Play</span>
+                </iframe>
+            </div>
+            <iframe style="display: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        
+        </div>
+
+<footer>
+    <p>© 2024 Video Gallery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

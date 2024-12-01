@@ -1,0 +1,175 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(''); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0; /* Removes default body margin */
+    font-family: Arial, sans-serif; /* Adds a clean font style */
+    color: #fff; /* Sets text color to contrast with the background */
+}
+
+a{
+    text-decoration: none;
+}
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+/* Container Style */
+.container {
+    text-align: center;
+    background-color: #f8f9fa; /* Softer background for contrast */
+    padding: 40px 20px;
+    border-radius: 16px; /* More rounded corners for a modern look */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow for a 3D effect */
+    width: 90%;
+    max-width: 650px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Decorative Overlay */
+.container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/* Title and Subtitle */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Button Container */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Button Styles */
+.crypto-button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient button background */
+    color: white;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px; /* Fully rounded buttons */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effects */
+.crypto-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.crypto-button:hover::before {
+    left: 100%;
+}
+
+.crypto-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Button Effect */
+.crypto-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Content */
+.crypto-button span {
+    z-index: 1;
+    position: relative;
+}
+
+/* Message Display */
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Responsive Heading Style */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+

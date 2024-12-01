@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Community Forum</title>
+    <link rel="stylesheet" href="cf.css">
+</head>
+<body>
+    <header>
+        <h1>Crypto Community Forum</h1>
+    </header>
+
+    <main>
+        <section class="post-form">
+            <h2>Share Your Thoughts</h2>
+            <form id="postForm">
+                <input type="text" id="username" placeholder="Your username" required>
+                <textarea id="content" placeholder="Type your post here..." required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+        <section class="posts" id="postsContainer">
+            <h2>Recent Posts</h2>
+            <!-- Posts will be appended here dynamically -->
+        </section>
+    </main>
+
+    <script src="cf.js"></script>
+</body>
+</html>
